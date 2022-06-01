@@ -12,12 +12,12 @@ fun main(args: Array<String>) {
     print("How many round-trip tickets: ")
     var numRound = s.nextInt()
 
-    val t = ticket(numTicket, numRound)
+    val t = kticket(numTicket, numRound)
     t.print()
 
 }
 
-class ticket(var numTicket:Int, var numRound:Int){
+class kticket(var numTicket:Int, var numRound:Int){
 
     fun print(){
         println("Total tickets: "+numTicket)
