@@ -6,14 +6,28 @@ fun main(args: Array<String>) {
 
     val s = Scanner(System.`in`)
 
+    while(true) {
 
-    print("Please enter number of tickets: ")
-    var numTicket = s.nextInt()
-    print("How many round-trip tickets: ")
-    var numRound = s.nextInt()
+        print("Please enter number of tickets: ")
+        var numTicket = s.nextInt()
 
-    val t = kticket(numTicket, numRound)
-    t.print()
+        if (numTicket != -1) {
+
+            print("How many round-trip tickets: ")
+            var numRound = s.nextInt()
+
+            if(numRound != -1) {
+                val t = kticket(numTicket, numRound)
+                t.print()
+            }
+            if(numRound == -1){
+                break
+            }
+        }
+        if (numTicket == -1){
+            break
+        }
+    }
 
 }
 
