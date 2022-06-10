@@ -28,6 +28,5 @@ public class BoxTester {
             }
             else
                 System.out.println("None of the box is available");
-
     }
 }

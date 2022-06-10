@@ -20,5 +20,4 @@ public class Box5 extends Box{
             return true;
 
     }
-
 }
